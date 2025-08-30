@@ -22,11 +22,12 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
+# C extensions
+*.[ao]
 *.so
 *.so.*
 *.dylib
+*.dll
 
 # Executables
 *.exe
@@ -42,14 +43,37 @@
 *.idb
 *.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
 # debug information files
 *.dwo
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+lib/
+lib64/
+
+# Cache and Temps
+*~
+*.tmp
+.[Cc]ache
+Traces/
+*.log
+
+# don't store keychains
+trustdb.gpg
+
+# Other and Misc
+.DS_Store
+*.kbx
+Icon*
+*.workflow/xcuserdata
+*.xcodeproj/xcuserdata
+*.workflow/xcuserdata/*
+*.xcodeproj/project.workflow/xcuserdata/*
+# prevent including 3rd party git pre-rebase.sample
+*.xcodeproj/hooks/pre-rebase
+*.xcodeproj/hooks/pre-rebase.sample
+swiftpm
+swiftpm/*
+IDEWorkspaceChecks.plist
